@@ -10,8 +10,18 @@ public class BankAccount {
         this.balance = balance;
     }
 
-    public void deposit(double plus){
-        balance += plus;
+    public void deposit(double amount) {
+
+        if (amount > 0) {
+
+            double newBalance = balance + amount;
+            balance = newBalance;
+            System.out.println("Deposit successful");
+
+        } else {
+
+            System.out.println("Invalid deposit amount!");
+        }
     }
 
     void showInfo(){
@@ -24,8 +34,8 @@ public class BankAccount {
     }
     public static void main(String[] args){
 
-        BankAccount account = new BankAccount("Erfan", 2000);
-        account.deposit(3000);
+        BankAccount account = new BankAccount("Erfan", 1000);
+        account.deposit(-2000);
         account.showInfo();
     }
 }
