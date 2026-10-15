@@ -10,8 +10,8 @@ public class BankAccount {
         this.balance = balance;
     }
 
-    public double deposit(double plus){
-        return (balance += plus);
+    public void deposit(double plus){
+        balance += plus;
     }
 
     void showInfo(){
