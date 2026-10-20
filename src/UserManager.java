@@ -25,7 +25,7 @@ class UserManager{
         System.out.println("Name: " + name);
         System.out.println("Username Valid: " + valid);
         System.out.println("Email: " + email);
-        System.out.println("======================================");
+        System.out.println("===================================");
     }
 
     public static void main(String[] args){
